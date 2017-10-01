@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Users Show</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <a href="/dashboard">Home</a>
+        <a href="/Logout">Logout</a>
+        <h3>{{top.item}}</h3>
+        <p>Users who added this product/item under their wish list:</p>
+        {%for user in users%}
+            <p>{{user.your_name}}</p>
+        {%endfor%}
+    </body>
+</html>
